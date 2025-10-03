@@ -33,16 +33,16 @@ This project is a complete Minimum Viable Product (MVP) with the following featu
   
 ▪️ Users can view all their incoming, outgoing, and accepted matches (GET /matches).  
   
-▪️ Users can accept or reject incoming match requests (PUT /matches/<id>).  
+▪️ Users can accept or reject incoming match requests (PUT /matches/<id>').  
   
-▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/<id>).  
+▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/<id>').  
   
-
+  
 * **MVP Messaging System:**  
   
 ▪️ Once a match is accepted, users can send and retrieve messages within that specific connection.  
   
-
+  
 ## 🛠️ Tech Stack  
   
 ▪️ **Framework**: Flask  
@@ -64,7 +64,7 @@ This project is a complete Minimum Viable Product (MVP) with the following featu
   
 To set up and run this project on your local machine, follow these steps.  
   
-
+  
 ### Prerequisites  
 
 ▪️ Python 3.10+  
@@ -77,7 +77,7 @@ To set up and run this project on your local machine, follow these steps.
 ### Setup Instructions  
   
 1. **Clone the repository**:  
-bash  
+```bash
 git clone
 https://github.com/hardik-soni12/SkillsUP-backend.git  
 cd skillsup-backend  
@@ -85,20 +85,20 @@ cd skillsup-backend
 
 2. **Create and activate a virtual environment**:  
   
-bash
-# For Windows  
-python -m venv venv  
-.\venv\Scripts\Activate.ps1  
+```bash
+#For Windows
+python -m venv venv
+.\venv\Scripts\Activate.ps1
   
-bash
-# For macOS/Linux  
-python3 -m venv venv  
-source venv/bin/activate  
+```bash
+#For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
   
   
 3. **Install the dependencies**:  
   
-bash
+```bash
 pip install -r requirements.txt  
   
 
@@ -108,7 +108,7 @@ pip install -r requirements.txt
   
 * Add the following lines to it to run in development mode:  
   
-bash
+```bash
 FLASK_APP=run:app  
 FLASK_ENV=development  
   
@@ -117,13 +117,13 @@ FLASK_ENV=development
   
 * Run the migration command to create your local dev.db file and all necessary tables.  
   
-bash
+```bash
 flask db upgrade  
   
   
 6. **Run the application**:  
   
-bash
+```bash
 python run.py  
   
 
