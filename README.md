@@ -33,9 +33,9 @@ This project is a complete Minimum Viable Product (MVP) with the following featu
   
 ▪️ Users can view all their incoming, outgoing, and accepted matches (GET /matches).  
   
-▪️ Users can accept or reject incoming match requests (PUT /matches/<id>`).  
+▪️ Users can accept or reject incoming match requests (PUT /matches/`<id>`).  
   
-▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/<id>`).  
+▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/`<id>`).  
   
   
 * **MVP Messaging System:**  
