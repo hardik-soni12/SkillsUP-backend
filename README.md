@@ -33,9 +33,9 @@ This project is a complete Minimum Viable Product (MVP) with the following featu
   
 ▪️ Users can view all their incoming, outgoing, and accepted matches (GET /matches).  
   
-▪️ Users can accept or reject incoming match requests (PUT /matches/<id>').  
+▪️ Users can accept or reject incoming match requests (PUT /matches/<id>`).  
   
-▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/<id>').  
+▪️ Users can cancel a sent request or unmatch an existing connection (DELETE /matches/<id>`).  
   
   
 * **MVP Messaging System:**  
@@ -81,26 +81,27 @@ To set up and run this project on your local machine, follow these steps.
 git clone
 https://github.com/hardik-soni12/SkillsUP-backend.git  
 cd skillsup-backend  
-
+```
+   
 2. **Create and activate a virtual environment**:  
   
 ```bash
 #For Windows
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-
+```
 ```bash
 #For macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
-
-
+```
+   
 3. **Install the dependencies**:  
   
 ```bash
 pip install -r requirements.txt  
-
-
+```
+   
 4. **Set up your environment variables**:  
   
 * Create a file named .flaskenv.  
@@ -110,20 +111,20 @@ pip install -r requirements.txt
 ```bash
 FLASK_APP=run:app  
 FLASK_ENV=development  
-
-
+```
+   
 5. **Set up the database**:  
   
 * Run the migration command to create your local dev.db file and all necessary tables.  
   
 ```bash
 flask db upgrade  
-
-
+```
+   
 6. **Run the application**:  
   
 ```bash
 python run.py  
-
-
+```
+   
 The API will now be running at http://127.0.0.1:5000.  
