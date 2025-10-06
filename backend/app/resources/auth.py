@@ -99,6 +99,7 @@ class Refresh(Resource):
 
 # logout api route
 class Logout(Resource):
+    @jwt_required()
     def post(self):
         # logout and clear jwt tokens
         return logout_user()

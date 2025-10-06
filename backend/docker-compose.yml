@@ -1,0 +1,22 @@
+# version 3.8 of the Docker Compose file format.
+version: '3.8'
+
+# define the services(containers) that make up our app
+services:
+
+  # this is our flask backend service
+  backend:
+
+    # Build the image from the Dockerfile in the current directory.
+    build: .
+
+    # Gives the container a friendly name.
+    container_name: skillsup-backend
+
+    # This tells docker-compose where to find our .env file with secrets.
+    env_file:
+      - .env
+
+    # Map port 5000 on our computer to port 5000 inside the container.
+    ports:
+     - "5000:5000"
