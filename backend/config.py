@@ -7,6 +7,7 @@ load_dotenv(os.path.join(basedir, '.env'))
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'a-very-secret-key')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    PROPAGATE_EXCEPTIONS = True
     
     # Database URL from .env
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
