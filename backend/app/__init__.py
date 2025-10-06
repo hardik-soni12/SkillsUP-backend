@@ -9,7 +9,7 @@ from .resources.matching_suggestions import match_suggestion_bp
 from .resources.match_route import match_bp
 from .resources.message_route import message_bp
 
-def create_app(config_name='development'):
+def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(Config_dict[config_name])
 
